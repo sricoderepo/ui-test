@@ -1,0 +1,8 @@
+<section class="flow_block">
+  <div class="flow_title">
+    <h3>{{block.name}}</h3>
+  </div>
+  <div class="flow_options_block clearfix">
+    <app-flow-block-column *ngFor="let column of block.data" [columnData]="column"></app-flow-block-column>
+  </div>
+</section>

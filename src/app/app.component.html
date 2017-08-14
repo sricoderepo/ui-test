@@ -1,0 +1,19 @@
+<header>
+  <div class="container">
+    <div class="logo_block">
+      <a href="index.html">
+						<img src="assets/logo.png" alt="EA Logo" title="EA">
+					</a>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <app-profile-block></app-profile-block>
+  <app-flow-block *ngFor="let block of blockConfiguration" [block]="block"></app-flow-block>
+  <div class="flow_form_save clearfix">
+    <a href="javascript:void(0)" class="fright cust_save_btn text_center" (click)="printData()">Save</a>
+  </div>
+</div>
+<footer class="text_center">
+  <p>copyrights &copy; 2017 Electronic Arts Inc.</p>
+</footer>

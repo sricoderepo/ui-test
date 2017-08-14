@@ -1,0 +1,13 @@
+<div class="flow_col_options_block">
+  <div class="flow_col_title">
+    <h4>{{columnConfigurationData.title}}</h4>
+  </div>
+  <div class="flow_col_options">
+    <div class="flow_option cust_check_option" *ngFor="let item of columnConfiguration">
+      <input type="checkbox" name="{{columnConfigurationName +'_' + item.name}}" value="{{item.name}}" id="{{columnConfigurationName +'_' + item.name}}" [(ngModel)]="item.checked">
+      <label for="{{columnConfigurationName +'_' + item.name}}" class="clearfix">
+											<span class="check_option" [ngClass]="{'half_selected': item.type}"></span>
+											<span>{{item.name}}</span>
+										</label>
+    </div>
+  </div>
